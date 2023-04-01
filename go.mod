@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/DATA-DOG/go-sqlmock v1.5.0
-	github.com/akhidnukhlis/implement-gRpc-microservice v0.0.0-20230331164300-471e32ab9344
+	github.com/akhidnukhlis/implement-gRpc-microservice v0.0.0-20230401075229-13e5eee8291a
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/go-ozzo/ozzo-validation/v4 v4.3.0
 	github.com/go-sql-driver/mysql v1.7.0

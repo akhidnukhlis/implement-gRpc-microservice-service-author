@@ -10,7 +10,7 @@ import (
 
 type Author interface {
 	SaveNewAuthor(ctx context.Context, payload *entity.Author) error
-	FindAuthorByID(ctx context.Context, userID string) (*entity.Author, error)
+	FindAuthorByID(ctx context.Context, authorID string) (*entity.Author, error)
 }
 
 func NewAuthor(db *gorm.DB) Author {

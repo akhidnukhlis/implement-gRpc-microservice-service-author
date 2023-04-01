@@ -1,10 +1,8 @@
 github.com/DATA-DOG/go-sqlmock v1.5.0 h1:Shsta01QNfFxHCfpW6YH2STWB0MudeXXEWMr20OEh60=
 github.com/DATA-DOG/go-sqlmock v1.5.0/go.mod h1:f/Ixk793poVmq4qj/V1dPUg2JEAKC73Q5eFN3EC/SaM=
 github.com/PuerkitoBio/goquery v1.5.1/go.mod h1:GsLWisAFVj4WgDibEWF4pvYnkVQBpKBKeU+7zCJoLcc=
-github.com/akhidnukhlis/implement-gRpc-microservice v0.0.0-20230329081056-afdd3f7f9f50 h1:jecTU6I3sqpy4lZWIYMCOKPJsHIsRlSObpFCUrN5IA8=
-github.com/akhidnukhlis/implement-gRpc-microservice v0.0.0-20230329081056-afdd3f7f9f50/go.mod h1:ZEADMYETPyXS1ETPNQ6QBu/qq/XjkbIu4mpMM/EzJ/Q=
-github.com/akhidnukhlis/implement-gRpc-microservice v0.0.0-20230331164300-471e32ab9344 h1:QAdk67vHkpM4VI+dOqhOMhZ1t7K27AM5+kEHQ6zIh00=
-github.com/akhidnukhlis/implement-gRpc-microservice v0.0.0-20230331164300-471e32ab9344/go.mod h1:BDzFI+QkR62u4bNX2aePiUawmKktv9I1pHJJuaGId4o=
+github.com/akhidnukhlis/implement-gRpc-microservice v0.0.0-20230401075229-13e5eee8291a h1:INoilnFV5lInZRr1/di+abbulDvlBg/JEAaG+JQhPSw=
+github.com/akhidnukhlis/implement-gRpc-microservice v0.0.0-20230401075229-13e5eee8291a/go.mod h1:BDzFI+QkR62u4bNX2aePiUawmKktv9I1pHJJuaGId4o=
 github.com/andybalholm/cascadia v1.1.0/go.mod h1:GsXiBklL0woXo1j/WYWtSYYC4ouU9PqHO0sqidkEA4Y=
 github.com/asaskevich/govalidator v0.0.0-20200108200545-475eaeb16496 h1:zV3ejI06GQ59hwDQAvmK1qxOQGB3WuVTRoY0okPTAv0=
 github.com/asaskevich/govalidator v0.0.0-20200108200545-475eaeb16496/go.mod h1:oGkLhpf+kjZl6xBf758TQhh5XrAeiJv/7FRz/2spLIg=

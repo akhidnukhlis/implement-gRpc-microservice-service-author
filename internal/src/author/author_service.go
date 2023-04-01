@@ -5,7 +5,6 @@ import (
 	proto "github.com/akhidnukhlis/implement-gRpc-microservice/grpc/pb"
 	"time"
 
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/helpers"
 	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/helpers/errorcodehandling"
 	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/helpers/unique"
 
@@ -32,14 +31,12 @@ func (s *service) CreateNewAuthor(ctx context.Context, payload *proto.CreateAuth
 	if err != nil {
 		return nil, err
 	}
-	hashPassword, _ := helpers.HashPassword(payload.Password)
 
 	user := &entity.Author{
 		ID:        uuid.NewString(),
 		Name:      payload.Name,
 		Email:     payload.Email,
-		Username:  payload.Username,
-		Password:  hashPassword,
+		Nickname:  payload.Nickname,
 		CreatedAt: time.Time{},
 		UpdatedAt: time.Time{},
 	}
@@ -53,12 +50,12 @@ func (s *service) CreateNewAuthor(ctx context.Context, payload *proto.CreateAuth
 }
 
 // FindAuthor represents algorithm to find author by id
-func (s *service) FindAuthor(ctx context.Context, userID string) (*entity.Author, error) {
-	if err := unique.ValidateUUID(userID); err != nil {
+func (s *service) FindAuthor(ctx context.Context, authorID string) (*entity.Author, error) {
+	if err := unique.ValidateUUID(authorID); err != nil {
 		return nil, entity.ErrUserNotExist
 	}
 
-	user, err := s.repo.Author.FindAuthorByID(ctx, userID)
+	user, err := s.repo.Author.FindAuthorByID(ctx, authorID)
 	if err != nil {
 		return nil, err
 	}
