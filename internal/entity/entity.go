@@ -6,9 +6,9 @@ type Error string
 const (
 	ErrPermissionNotAllowed = Error("permission.not_allowed")
 
-	ErrUserNotExist            = Error("domain.author.error.not_exist")
-	ErrUserAlreadyExist        = Error("domain.author.error.email_or_username_alredy_exist")
-	ErrUsersCredentialNotExist = Error("domain.author.error.credential_not_exist")
+	ErrAuthorNotExist            = Error("domain.author.error.not_exist")
+	ErrAuthorAlreadyExist        = Error("domain.author.error.email_or_username_alredy_exist")
+	ErrAuthorsCredentialNotExist = Error("domain.author.error.credential_not_exist")
 )
 
 func (e Error) Error() string {

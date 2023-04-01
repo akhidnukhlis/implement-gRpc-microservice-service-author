@@ -9,5 +9,5 @@ import (
 
 type Service interface {
 	CreateNewAuthor(ctx context.Context, payload *proto.CreateAuthorRequest) (*entity.Author, error)
-	FindAuthor(ctx context.Context, userID string) (*entity.Author, error)
+	FindAuthor(ctx context.Context, authorID string) (*entity.Author, error)
 }

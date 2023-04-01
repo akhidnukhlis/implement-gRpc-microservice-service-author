@@ -17,9 +17,9 @@ func (r *AuthorRepository) SaveNewAuthor(ctx context.Context, payload *entity.Au
 		parsed := r.codeError.ParseSQLError(err)
 		switch parsed {
 		case app.ErrNoRowsFound:
-			return entity.ErrUserNotExist
+			return entity.ErrAuthorNotExist
 		case app.ErrUniqueViolation:
-			return entity.ErrUserAlreadyExist
+			return entity.ErrAuthorAlreadyExist
 		default:
 			return errors.Wrap(parsed, "build statement query to insert author from database")
 		}

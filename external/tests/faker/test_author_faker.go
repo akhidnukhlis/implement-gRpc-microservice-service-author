@@ -12,7 +12,7 @@ func FakeAuthor() *entity.Author {
 	return &entity.Author{
 		ID:        AuthorID001,
 		Name:      AuthorUsername001,
-		Nickname:  AuthorUsername001,
+		Nickname:  AuthorNickname001,
 		Email:     AuthorEmail001,
 		CreatedAt: timeNow,
 		UpdatedAt: timeNow,

@@ -32,7 +32,7 @@ func (s *service) CreateNewAuthor(ctx context.Context, payload *proto.CreateAuth
 		return nil, err
 	}
 
-	user := &entity.Author{
+	author := &entity.Author{
 		ID:        uuid.NewString(),
 		Name:      payload.Name,
 		Email:     payload.Email,
@@ -41,24 +41,24 @@ func (s *service) CreateNewAuthor(ctx context.Context, payload *proto.CreateAuth
 		UpdatedAt: time.Time{},
 	}
 
-	err = s.repo.Author.SaveNewAuthor(ctx, user)
+	err = s.repo.Author.SaveNewAuthor(ctx, author)
 	if err != nil {
 		return nil, err
 	}
 
-	return user, nil
+	return author, nil
 }
 
 // FindAuthor represents algorithm to find author by id
 func (s *service) FindAuthor(ctx context.Context, authorID string) (*entity.Author, error) {
 	if err := unique.ValidateUUID(authorID); err != nil {
-		return nil, entity.ErrUserNotExist
+		return nil, entity.ErrAuthorNotExist
 	}
 
-	user, err := s.repo.Author.FindAuthorByID(ctx, authorID)
+	author, err := s.repo.Author.FindAuthorByID(ctx, authorID)
 	if err != nil {
 		return nil, err
 	}
 
-	return user, nil
+	return author, nil
 }
