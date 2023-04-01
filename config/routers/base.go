@@ -20,7 +20,7 @@ import (
 var grpcServer = grpc.NewServer()
 
 type Service struct {
-	User *handler.AuthorHandler
+	Author *handler.AuthorHandler
 }
 
 type Serve struct {

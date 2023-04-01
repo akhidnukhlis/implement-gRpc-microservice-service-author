@@ -38,27 +38,26 @@ func (ah *AuthorHandler) ServiceRegisterAuthor(ctx context.Context, payload *pb.
 // ServiceFindAuthorById is handler function to Handle find author
 func (ah *AuthorHandler) ServiceFindAuthorById(ctx context.Context, proto *pb.FindAuthorByIdRequest) (*pb.AuthorStatusResponse, error) {
 
-	findUser, err := ah.service.FindAuthor(ctx, proto.Id)
+	findAuthor, err := ah.service.FindAuthor(ctx, proto.Id)
 	if err != nil {
 
 		return nil, err
 
 	}
 
-	user := &pb.AuthorResponse{
-		Id:        findUser.ID,
-		Name:      findUser.Name,
-		Email:     findUser.Email,
-		Username:  findUser.Username,
-		Password:  findUser.Password,
-		CreatedAt: findUser.CreatedAt.String(),
-		UpdatedAt: findUser.UpdatedAt.String(),
+	author := &pb.AuthorResponse{
+		Id:        findAuthor.ID,
+		Name:      findAuthor.Name,
+		Nickname:  findAuthor.Nickname,
+		Email:     findAuthor.Email,
+		CreatedAt: findAuthor.CreatedAt.String(),
+		UpdatedAt: findAuthor.UpdatedAt.String(),
 	}
 
 	response := &pb.AuthorStatusResponse{
 		Status:  "Success",
 		Message: "Author Found",
-		Data:    user,
+		Data:    author,
 	}
 
 	return response, nil
