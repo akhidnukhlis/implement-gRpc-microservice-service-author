@@ -1,0 +1,2 @@
+*.* linguist-language=Go
+*.html linguist-detectable=false
