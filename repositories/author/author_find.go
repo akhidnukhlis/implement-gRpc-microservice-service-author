@@ -9,7 +9,7 @@ import (
 )
 
 // FindAuthorByID is used to run query find author
-func (r *AuthorRepository) FindAuthorByID(ctx context.Context, authorID string) (*entity.Author, error) {
+func (r *authorRepository) FindAuthorByID(ctx context.Context, authorID string) (*entity.Author, error) {
 	var author entity.Author
 	err := r.db.First(&author, "id = ?", authorID).Error
 	if err != nil {

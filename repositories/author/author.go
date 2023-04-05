@@ -5,13 +5,13 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-type AuthorRepository struct {
+type authorRepository struct {
 	db        *gorm.DB
 	codeError *errorcodehandling.CodeError
 }
 
-func NewAuthorRepository(db *gorm.DB) *AuthorRepository {
-	return &AuthorRepository{
+func NewAuthorRepository(db *gorm.DB) *authorRepository {
+	return &authorRepository{
 		db: db,
 	}
 }

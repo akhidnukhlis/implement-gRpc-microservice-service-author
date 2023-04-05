@@ -10,7 +10,7 @@ import (
 )
 
 // SaveNewAuthor is used to run query insert
-func (r *AuthorRepository) SaveNewAuthor(ctx context.Context, payload *entity.Author) error {
+func (r *authorRepository) SaveNewAuthor(ctx context.Context, payload *entity.Author) error {
 
 	err := r.db.Create(payload).Error
 	if err != nil {
@@ -25,4 +25,5 @@ func (r *AuthorRepository) SaveNewAuthor(ctx context.Context, payload *entity.Au
 		}
 	}
 	return nil
+
 }
