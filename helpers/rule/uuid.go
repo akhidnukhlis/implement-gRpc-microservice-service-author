@@ -3,7 +3,7 @@ package rule
 import (
 	"regexp"
 
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/helpers/unique"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/helpers/unique"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 )
 

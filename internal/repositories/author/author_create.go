@@ -5,8 +5,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/config/app"
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/entity"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/config/app"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/internal/entity"
 )
 
 // SaveNewAuthor is used to run query insert

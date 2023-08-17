@@ -1,7 +1,7 @@
 package faker
 
 import (
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/entity"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/internal/entity"
 	"time"
 )
 

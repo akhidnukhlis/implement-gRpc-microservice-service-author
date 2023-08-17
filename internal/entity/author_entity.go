@@ -1,7 +1,7 @@
 package entity
 
 import (
-	proto "github.com/akhidnukhlis/implement-gRpc-microservice/grpc/pb"
+	proto "github.com/akhidnukhlis/implement-gRpc-proto-bank/grpc/pb"
 	"time"
 
 	validation "github.com/go-ozzo/ozzo-validation/v4"

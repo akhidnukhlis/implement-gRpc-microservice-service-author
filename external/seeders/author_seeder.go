@@ -1,8 +1,8 @@
 package seeders
 
 import (
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/external/faker"
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/entity"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/external/faker"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/internal/entity"
 	"github.com/jinzhu/gorm"
 )
 

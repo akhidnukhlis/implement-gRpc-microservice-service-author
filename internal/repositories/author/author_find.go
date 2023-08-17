@@ -2,9 +2,9 @@ package author
 
 import (
 	"context"
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/entity"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/internal/entity"
 
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/config/app"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/config/app"
 	"github.com/pkg/errors"
 )
 

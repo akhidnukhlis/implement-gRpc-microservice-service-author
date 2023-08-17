@@ -2,10 +2,10 @@ package middleware
 
 import (
 	"errors"
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/handler/auth"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/handler/auth"
 	"net/http"
 
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/helpers"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/helpers"
 )
 
 func SetMiddlewareJSON(next http.HandlerFunc) http.HandlerFunc {

@@ -1,7 +1,7 @@
 package app
 
 import (
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/entity"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/internal/entity"
 )
 
 // SetMigrationTable is used to register entity model which want to be migrate

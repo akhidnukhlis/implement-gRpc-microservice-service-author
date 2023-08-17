@@ -2,14 +2,14 @@ package author
 
 import (
 	"context"
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/repositories"
-	proto "github.com/akhidnukhlis/implement-gRpc-microservice/grpc/pb"
+	"github.com/akhidnukhlis/implement-gRpc-proto-bank/grpc/pb"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/internal/repositories"
 	"time"
 
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/helpers/errorcodehandling"
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/helpers/unique"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/helpers/errorcodehandling"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/helpers/unique"
 
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/entity"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/internal/entity"
 	"github.com/google/uuid"
 )
 
@@ -25,7 +25,7 @@ func NewService(repo *repositories.Repository) *service {
 }
 
 // CreateNewAuthor represents algorithm to register new author
-func (s *service) CreateNewAuthor(ctx context.Context, payload *proto.CreateAuthorRequest) (*entity.Author, error) {
+func (s *service) CreateNewAuthor(ctx context.Context, payload *pb.CreateAuthorRequest) (*entity.Author, error) {
 
 	err := entity.AuthorRequestValidate(payload)
 	if err != nil {

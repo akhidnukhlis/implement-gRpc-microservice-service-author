@@ -3,8 +3,8 @@ package usecase
 import (
 	"context"
 
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/services/author"
-	"github.com/akhidnukhlis/implement-gRpc-microservice/grpc/pb"
+	"github.com/akhidnukhlis/implement-gRpc-proto-bank/grpc/pb"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/internal/services/author"
 )
 
 type AuthorHandler struct {

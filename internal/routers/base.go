@@ -2,13 +2,13 @@ package routers
 
 import (
 	"fmt"
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/usecase"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/internal/usecase"
 	"log"
 	"net"
 	"net/http"
 	"os"
 
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/config/app"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/config/app"
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"
 	"google.golang.org/grpc"

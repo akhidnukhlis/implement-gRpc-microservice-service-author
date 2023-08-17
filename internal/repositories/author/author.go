@@ -1,7 +1,7 @@
 package author
 
 import (
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/helpers/errorcodehandling"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/helpers/errorcodehandling"
 	"github.com/jinzhu/gorm"
 )
 

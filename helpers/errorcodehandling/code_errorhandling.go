@@ -3,7 +3,7 @@ package errorcodehandling
 import (
 	"os"
 
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/config/app"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/config/app"
 )
 
 type CodeError struct{}

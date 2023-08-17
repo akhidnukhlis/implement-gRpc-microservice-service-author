@@ -1,10 +1,10 @@
 package author
 
 import (
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/external/faker"
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/external/seeders"
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/external/tests"
-	"github.com/akhidnukhlis/implement-gRpc-microservice/grpc/pb"
+	"github.com/akhidnukhlis/implement-gRpc-proto-bank/grpc/pb"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/external/faker"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/external/seeders"
+	"github.com/akhidnukhlis/implement-gRpc-server-author-service/external/tests"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
