@@ -2,6 +2,7 @@ package author
 
 import (
 	"context"
+	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/repositories"
 	proto "github.com/akhidnukhlis/implement-gRpc-microservice/grpc/pb"
 	"time"
 
@@ -9,7 +10,6 @@ import (
 	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/helpers/unique"
 
 	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/entity"
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/repositories"
 	"github.com/google/uuid"
 )
 

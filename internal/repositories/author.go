@@ -3,8 +3,8 @@ package repositories
 import (
 	"context"
 	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/entity"
+	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/repositories/author"
 
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/repositories/author"
 	"github.com/jinzhu/gorm"
 )
 

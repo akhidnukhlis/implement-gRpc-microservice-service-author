@@ -1,9 +1,9 @@
 package routers
 
 import (
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/handler"
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/src/author"
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/repositories"
+	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/repositories"
+	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/services/author"
+	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/usecase"
 	"github.com/akhidnukhlis/implement-gRpc-microservice/grpc/pb"
 )
 
@@ -18,9 +18,8 @@ func (se *Serve) initializeRoutes() {
 
 	//=== AUTHOR ===
 	authorService := author.NewService(r)
-	AuthorHandler := handler.NewAuthorHandler(authorService)
+	AuthorHandler := usecase.NewAuthorHandler(authorService)
 
 	pb.RegisterAuthorServiceServer(grpcServer, AuthorHandler)
 	//=========================================================
-
 }

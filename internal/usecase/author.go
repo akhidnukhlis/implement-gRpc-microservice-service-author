@@ -1,9 +1,9 @@
-package handler
+package usecase
 
 import (
 	"context"
 
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/src/author"
+	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/services/author"
 	"github.com/akhidnukhlis/implement-gRpc-microservice/grpc/pb"
 )
 

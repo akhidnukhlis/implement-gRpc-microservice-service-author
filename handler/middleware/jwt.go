@@ -2,9 +2,9 @@ package middleware
 
 import (
 	"errors"
+	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/handler/auth"
 	"net/http"
 
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/config/auth"
 	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/helpers"
 )
 

@@ -2,13 +2,13 @@ package routers
 
 import (
 	"fmt"
+	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/usecase"
 	"log"
 	"net"
 	"net/http"
 	"os"
 
 	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/config/app"
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/handler"
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"
 	"google.golang.org/grpc"
@@ -20,7 +20,7 @@ import (
 var grpcServer = grpc.NewServer()
 
 type Service struct {
-	Author *handler.AuthorHandler
+	Author *usecase.AuthorHandler
 }
 
 type Serve struct {
@@ -65,7 +65,7 @@ func (se *Serve) Initialize(dbDriver, DbUser, DbPassword, DbPort, DbHost, DbName
 	se.initializeRoutes()
 }
 
-// Run is used to execute connection and run our service
+// Run is used to execute connection and run our services
 
 func (se *Serve) Run() {
 	port := os.Getenv("APP_PORT")

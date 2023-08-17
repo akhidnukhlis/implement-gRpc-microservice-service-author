@@ -3,7 +3,7 @@ package tests
 import (
 	"context"
 	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/helpers/errorcodehandling"
-	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/repositories"
+	"github.com/akhidnukhlis/implement-gRpc-microservice-service-author/internal/repositories"
 	proto "github.com/akhidnukhlis/implement-gRpc-microservice/grpc/pb"
 	"github.com/jinzhu/gorm"
 )
