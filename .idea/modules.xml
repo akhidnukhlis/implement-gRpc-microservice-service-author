@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../implement-gRpc-microservice-service-author/.idea/implement-gRpc-microservice-service-author.iml" filepath="$PROJECT_DIR$/../implement-gRpc-microservice-service-author/.idea/implement-gRpc-microservice-service-author.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/implement-gRpc-server-author-service.iml" filepath="$PROJECT_DIR$/.idea/implement-gRpc-server-author-service.iml" />
     </modules>
   </component>
 </project>
