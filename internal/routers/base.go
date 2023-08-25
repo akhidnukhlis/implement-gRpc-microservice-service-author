@@ -70,21 +70,25 @@ func (se *Serve) Initialize(dbDriver, DbUser, DbPassword, DbPort, DbHost, DbName
 func (se *Serve) Run() {
 	port := os.Getenv("APP_PORT")
 	fmt.Println("Listening to port ", port)
+
 	log.Fatal(http.ListenAndServe(":"+port, se.Router))
 }
 
 func (se *Serve) RunGrpc() {
 	port := os.Getenv("GRPC_PORT")
-	fmt.Println("Listening to port ", port)
-	lis, err := net.Listen("tcp", port)
+
+	lis, err := net.Listen("tcp", fmt.Sprintf("localhost:%v", port))
 	if err != nil {
 		log.Fatalf("failed connection : %v\n", err)
 	}
 
-	log.Printf("server listening at %v\n", lis.Addr())
-	if grpcServer.Serve(lis); err != nil {
-		log.Fatalf("failed to server : %v\n", err)
-	}
+	log.Printf("server GRPC listening at %v\n", lis.Addr())
+
+	go func() {
+		if grpcServer.Serve(lis); err != nil {
+			log.Fatalf("failed to server : %v\n", err)
+		}
+	}()
 
 	log.Fatal(http.ListenAndServe(":"+port, se.Router))
 }

@@ -35,7 +35,8 @@ func Run() {
 		os.Getenv("DB_PASSWORD"),
 		os.Getenv("DB_PORT"),
 		os.Getenv("DB_HOST"),
-		os.Getenv("DB_NAME"))
+		os.Getenv("DB_NAME"),
+	)
 
 	// seed.Load(server.DB)
 
